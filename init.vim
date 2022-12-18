@@ -3,7 +3,7 @@
 :set textwidth=80
 :set wrap linebreak nolist
 :set clipboard=unnamed
-set encoding=UTF-8
+:set encoding=UTF-8
 
 try
     source ~/.config/nvim/extra/plugins.vim
@@ -39,6 +39,7 @@ map <Space>8 9gt
 " Utility
 nnoremap <Space>ft :NERDTreeToggle<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
+
 nnoremap <Space>fed :PlugInstall<CR>
 
 "MAGIT
@@ -54,8 +55,8 @@ nnoremap <Space>bd :bd<CR>
 
 nnoremap <C-l> :call CocActionAsync('jumpDefinition')<CR>
 
-nmap <Space>xJ ddp<Space>x
-nmap <Space>xK ddkkp<Space>x
+nmap <Space>xJ ddp<Space>
+nmap <Space>xK ddkkp<Space>
 
 " find in buffer
 nnoremap <Space>ss <cmd>Telescope live_grep<cr>
